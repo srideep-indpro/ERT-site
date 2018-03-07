@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+	elementFormDefault="qualified">
+	<xs:element name="Registrations">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="Registration" minOccurs="1" maxOccurs="unbounded" />
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+
+	<xs:element name="Registration">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element type="xs:string" name="UserId" />
+				<xs:element type="xs:string" name="Name" />
+				<xs:element type="xs:string" name="Email" />
+				<xs:element type="xs:string" name="PhoneNumber" />
+				<xs:element type="xs:string" name="Password" />
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+</xs:schema>

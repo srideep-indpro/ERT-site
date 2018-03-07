@@ -1,0 +1,18 @@
+plugins {
+    id 'java'
+    id 'war'  
+}
+
+repositories {
+    jcenter()
+}
+
+dependencies {
+    providedCompile 'javax.servlet:javax.servlet-api:3.1.0' 
+    compile group: 'org.glassfish.web', name: 'javax.servlet.jsp.jstl', version: '1.2.4'
+    compile group: 'mysql', name: 'mysql-connector-java', version: '5.1.44'
+    compile group: 'org.webjars', name: 'bootstrap', version: '3.3.6'
+    compile group: 'org.webjars.bower', name: 'jquery', version: '1.9.1'
+    compile group: 'com.maxmind.geoip', name: 'geoip-api', version: '1.2.14'
+    
+}
